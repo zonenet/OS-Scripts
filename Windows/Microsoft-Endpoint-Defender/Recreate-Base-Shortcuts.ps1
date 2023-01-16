@@ -19,8 +19,8 @@
    } #>
 
 
-
-Start-Transcript -Path "C:\Recreate-Base-Shortcuts.log"
+if (!(Test-Path C:\Skyttel -PathType Container)) {mkdir C:\Skyttel}
+Start-Transcript -Path "C:\Skyttel\Recreate-Base-Shortcuts.log"
 Write-Host "" # Makes log look better
 
 # Constants
