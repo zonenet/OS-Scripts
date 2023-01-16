@@ -32,7 +32,7 @@ Set-Variable NotInstalled -Option Constant -Value "NOT-INSTALLED"
 # Variables
 
 $isWindows11 = ((Get-WMIObject win32_operatingsystem).Caption).StartsWith("Microsoft Windows 11")
-$isWindows10 = ((Get-WMIObject win32_operatingsystem).Caption).StartsWith("Microsoft Windows 10")
+
 $isWin10orNewer = [System.Environment]::OSVersion.Version.Major -ge 10
 $UninstallKeys = "HKLM:\Software\Microsoft\Windows\CurrentVersion\Uninstall", "HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall"
 $UninstallList = foreach ($UninstallKey in $UninstallKeys) {
