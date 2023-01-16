@@ -282,6 +282,12 @@ $sysAppList = @(
   @{Name = "Visual Studio Code (32-bit)"; TargetPath = "C:\Program Files (x86)\Microsoft VS Code\Code.exe"; SystemLnk = "Visual Studio Code\"; StartIn = "C:\Program Files\Microsoft VS Code" },
   @{Name = "Visual Studio Installer"; TargetPath = "C:\Program Files\Microsoft Visual Studio\Installer\setup.exe"; StartIn = "C:\Program Files\Microsoft Visual Studio\Installer" }, # it's the only install on 32-bit
   @{Name = "Visual Studio Installer"; TargetPath = "C:\Program Files (x86)\Microsoft Visual Studio\Installer\setup.exe"; StartIn = "C:\Program Files (x86)\Microsoft Visual Studio\Installer" }, # it's the only install on 64-bit
+  # SQL Management Studio
+  @{Name = "Microsoft SQL Server Management Studio 18"; TargetPath = "C:\Program Files (x86)\Microsoft SQL Server Management Studio 18\Common7\IDE\Ssms.exe"; StartIn = "C:\Program Files (x86)\Microsoft SQL Server Management Studio 18\Common7\IDE" }, 
+  @{Name = "Microsoft SQL Server Management Studio 17"; TargetPath = "C:\Program Files (x86)\Microsoft SQL Server Management Studio 17\Common7\IDE\Ssms.exe"; StartIn = "C:\Program Files (x86)\Microsoft SQL Server Management Studio 17\Common7\IDE" },
+  # Custom Navision 2017 + regular client
+  @{Name = "NAVCS"; TargetPath = "C:\Program Files (x86)\Skyttel\NAV Servervelger\NavChangeServer.exe"; StartIn = "C:\Program Files (x86)\Skyttel\NAV Servervelger" },
+  @{Name = "Dynamics Nav 2017"; TargetPath = "C:\Program Files (x86)\Microsoft Dynamics NAV\100\RoleTailored Client\Microsoft.Dynamics.Nav.Client.exe"; StartIn = "C:\Program Files (x86)\Microsoft Dynamics NAV\100\RoleTailored Client" },
   # Windows Accessories
   @{Name = "Remote Desktop Connection"; TargetPath = "%windir%\system32\mstsc.exe"; SystemLnk = "Accessories\"; StartIn = "%windir%\system32\"; Description = "Use your computer to connect to a computer that is located elsewhere and run programs or access files." },
   @{Name = "Steps Recorder"; TargetPath = "%windir%\system32\psr.exe"; SystemLnk = "Accessories\"; Description = "Capture steps with screenshots to save or share." },
